@@ -10,7 +10,7 @@ import { User } from 'src/auth/entities/user.entity';
   controllers: [ProductsController],
   providers: [ProductsService],
   imports: [
-    TypeOrmModule.forFeature([ Product, ProductImage, User])
+    TypeOrmModule.forFeature([ Product, ProductImage])
   ],
   exports: [ProductsService,
     TypeOrmModule
